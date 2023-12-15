@@ -1,0 +1,161 @@
+Q1. Write the Code for all Data types.
+Ans. String
+let a = 'Saket Kumar'
+console.log(a)
+o/p: Saket Kumar
+
+Number
+let num1 = 5
+let num2 = 6
+let num3 = num1 + num2
+console.log(num3)
+O/P: 11
+
+Boolean
+let a = 10                let a = 10          
+let b = 15                let b = 15
+let c = a > b             let c = a < b
+console.log(c)            console.log(c)
+O/P: false                O/P: true
+
+Undefined              Not defined                  Null
+var b;                 console.log(a)               let c = null
+console.log(b)         O/P: a is not defined        console.log(c)
+O/P: undefined                                      O/P: null
+
+Q2. What are the uses of JavaScript Operators?
+Ans. JavaScript operators are symbols or keywords that perform operations on operands. They allow you to manipulate values and variables in various ways.
+
+eg: Arithmetic Operators:
+
+Addition (+): Adds two values.
+Subtraction (-): Subtracts the right operand from the left operand.
+Multiplication ():* Multiplies two values.
+Division (/): Divides the left operand by the right operand.
+Modulus (%): Returns the remainder of the division.
+let a = 5;
+let b = 2;
+let sum = a + b; // 7
+let difference = a - b; // 3
+let product = a * b; // 10
+let quotient = a / b; // 2.5
+let remainder = a % b; // 1
+
+Assignment Operators:
+
+Assignment (=): Assigns a value to a variable.
+Addition Assignment (+=): Adds the right operand to the left operand and assigns the result to the left operand.
+Subtraction Assignment (-=): Subtracts the right operand from the left operand and assigns the result to the left operand.
+let x = 10;
+x += 5; // x is now 15
+x -= 3; // x is now 12
+
+Comparison Operators:
+
+Equality (==): Compares two values for equality (with type coercion).
+Strict Equality (===): Compares two values for equality (without type coercion).
+Inequality (!=): Compares two values for inequality (with type coercion).
+Strict Inequality (!==): Compares two values for inequality (without type coercion).
+Greater Than (>): Checks if the left operand is greater than the right operand.
+Less Than (<): Checks if the left operand is less than the right operand.
+Greater Than or Equal To (>=): Checks if the left operand is greater than or equal to the right operand.
+Less Than or Equal To (<=): Checks if the left operand is less than or equal to the right operand.
+let num1 = 5;
+let num2 = '5';
+console.log(num1 == num2); // true (equality with type coercion)
+console.log(num1 === num2); // false (strict equality without type coercion)
+
+Logical Operators:
+
+Logical AND (&&): Returns true if both operands are true.
+Logical OR (||): Returns true if at least one operand is true.
+Logical NOT (!): Returns the opposite boolean value of the operand.
+let isTrue = true;
+let isFalse = false;
+
+console.log(isTrue && isFalse); // false
+console.log(isTrue || isFalse); // true
+console.log(!isTrue); // false
+
+Unary Operators:
+
+Unary Plus (+): Converts its operand to a number.
+Unary Negation (-): Negates its operand.
+Increment (++): Increases the value of a variable by 1.
+Decrement (--): Decreases the value of a variable by 1.
+let number = '5';
+console.log(+number); // 5 (converts to number)
+
+let negation = -10;
+console.log(-negation); // 10 (negates the value)
+
+let counter = 3;
+counter++; // counter is now 4
+
+Q3. Explain the Assignment Operator.
+Ans. The assignment ( = ) operator is used to assign a value to a variable or property. The assignment expression itself has a value, which is the assigned value. This allows multiple assignments to be chained in order to assign a single value to multiple variables.
+eg: let x = 10;
+x += 5; // x is now 15
+x -= 3; // x is now 12
+
+Q4. Explain the all Arithmetic Operators.
+Ans. Addition (+):
+
+Adds two values together.
+Example:
+let sum = 5 + 3; // sum is 8
+Subtraction (-):
+
+Subtracts the right operand from the left operand.
+Example:
+let difference = 8 - 3; // difference is 5
+Multiplication (*):
+
+Multiplies two values.
+Example:
+let product = 4 * 2; // product is 8
+Division (/):
+
+Divides the left operand by the right operand.
+Example:
+let quotient = 10 / 2; // quotient is 5
+Modulus (%):
+
+Returns the remainder of the division of the left operand by the right operand.
+Example:
+let remainder = 7 % 3; // remainder is 1 (7 divided by 3 leaves a remainder of 1)
+Exponentiation ():**
+
+Raises the left operand to the power of the right operand.
+Example:
+let result = 2 ** 3; // result is 8 (2 raised to the power of 3)
+
+Q5. What are the Binary Operators in js.
+Ans. Binary operators in JavaScript are operators that require two operands (values or variables) to perform an operation.
+eg: Arithmetic Operator, Comparison Operator, Logical Operator, Assignment Operator, Bitwise Operator
+
+Q6. Explain the Pre-Increment and Post Increment in js.
+Ans. In JavaScript, both pre-increment and post-increment are unary operators used to increase the value of a variable. The key difference lies in when the incrementation is applied relative to the evaluation of the expression.
+
+Pre-Increment (++variable):
+
+In pre-increment, the variable is incremented before its value is used in the expression.
+
+Example:
+let a = 5;
+let b = ++a; // Increment 'a' first, then assign to 'b'
+
+console.log(a); // 6
+console.log(b); // 6
+Here, a is incremented by 1 before its value is assigned to b. So, both a and b end up with the value 6.
+
+Post-Increment (variable++):
+
+In post-increment, the current value of the variable is used in the expression, and then the variable is incremented.
+
+Example:
+let x = 8;
+let y = x++; // Assign the current value of 'x' to 'y', then increment 'x'
+
+console.log(x); // 9
+console.log(y); // 8
